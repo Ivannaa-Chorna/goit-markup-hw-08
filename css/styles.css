@@ -1,4 +1,52 @@
-body{
-    background-color: #fff;
-    color: #2a2a2a;
+:root{
+    --primary-tex-color: 
+    --title-text-color:#212121;
+    --accent-color: 
+}
+
+.body{
+    background-color: #FFFFFF;
+    color: #212121;
+}
+
+.logo{
+    color:#2196F3;
+}
+ul{
+    list-style: none;
+}
+.site-nav .link{
+    color: #212121;
+}
+.site-nav .link:hover, 
+.site-nav .link:focus{
+    color: #2196F3;
+}
+.contact-type .link{
+    color: #757575;
+}
+.contact-type .link:hover,
+        .contact-type .link:focus{
+    color: #2196F3;
+}
+
+.bisness-title {
+    color: #FFFFFF;
+    background-color: #2F303A;
+}
+.button{
+    color: #FFFFFF;
+    background-color: #2196F3;
+}
+
+.section-title{
+    color: #212121;
+}
+.work-list .title {
+    color: #212121;
+}
+
+
+.workes-list .title {
+    color: #212121;
 }
