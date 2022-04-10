@@ -5,11 +5,8 @@
     --link-color: #2196F3;
     --item-color: #FFFFFF;
     --button-color: #188CE8;
-    --adress-color:rgba(255, 255, 255, 0.6);
-    --background-color: #F5F4FA;
-    --background-clip: #E5E5E5;
+    --adress-color:rgba(255, 255, 255, 0.6); 
 }
-
 .body{
     font-family: "Roboto", sans-serif;
     color: var(--primary-tex-color);
@@ -68,14 +65,14 @@ ul{
 /*------------------------------BISNESS------------*/
 .bisness{
     background-color: var(--accent-color);
-    font-weight: 900;
-    font-size: 44px;
     line-height: 1.36;
     text-align: center;
     letter-spacing: 0.06em;
 }
 .bisness-title{
     color: var(--item-color);
+    font-weight: 900;
+    font-size: 44px;
 }
 .button{
     color: var(--item-color);
@@ -84,6 +81,7 @@ ul{
     font-size: 16px;
     line-height: 1.87;
     letter-spacing: 0.06em;
+    cursor: pointer;
 }
 
 .button-list:hover,
@@ -97,6 +95,7 @@ ul{
     line-height: 1.62;
     text-align: center;
     letter-spacing: 0.03em;
+    cursor: pointer;
 }
 .button-item:hover,
 .button-item:focus{
@@ -107,15 +106,14 @@ ul{
 
 .section-item .title{
     color: var(--primary-tex-color);
-    background-color: var(--background-clip);
     font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.03em;
+    text-transform:uppercase ;
 }
 .section-item .text{
     color: var(--title-text-color);
-    font-weight: 400;
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
@@ -124,14 +122,13 @@ ul{
 
 .section-work{
     color: var(--primary-tex-color);
-    background-color: var(--background-color);
     font-weight: 700;
     font-size: 36px;
     line-height: 1.16;
     text-align: center;
     letter-spacing: 0.03em;
 }
-.section-work .hero{
+.hero{
     color: var(--primary-tex-color);
     font-weight: 500;
     font-size: 16px;
@@ -140,7 +137,6 @@ ul{
 }
 .specialty{
     color: var(--title-text-color);
-    font-weight: 400;
     font-size: 16px;
     line-height: 1.18;
     letter-spacing: 0.03em;
@@ -157,10 +153,12 @@ ul{
 .footer-page .link{
     color: var(--adress-color);
     font-style: normal;
-    font-weight: 400;
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
+}
+.footer-page .footer-link{
+    color: var(--item-color);
 }
 
 .footer-page .link:hover,
@@ -170,17 +168,17 @@ ul{
     
 /*------------------------------PORTFOLIO------------*/
 
-.position .name{
+
+.portfolio .name{
     color: var(--primary-tex-color);
     font-weight: 700;
     font-size: 18px;
     line-height: 2;
-    letter-spacing: 0.06em;
+    letter-spacing: 0.06em;--------
 }
+
 .position .descriptions{
     color: var(--title-text-color);
-    font-style: normal;
-    font-weight: 400;
     font-size: 16px;
     line-height: 1.87;
     letter-spacing: 0.03em;
