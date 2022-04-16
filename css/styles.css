@@ -1,3 +1,12 @@
+html{
+    box-sizing: border-box;
+}
+
+*,
+*::before 
+*::after {
+    box-sizing: inherit;
+}
 :root{
     --primary-tex-color: #212121;
     --title-text-color: #757575;
@@ -13,9 +22,25 @@
 }
 ul{
     list-style: none;
+    padding: 0;
+    margin: 0;
 }
 .link{
     text-decoration: none;
+}
+h1,
+h2,
+h3,
+p{
+    padding: 0;
+    margin: 0;
+}
+.container{
+    margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    width: 1200px;
+    outline: 2px solid blue
 }
 /*------------------------------LOGO------------*/
 
@@ -27,7 +52,11 @@ ul{
     line-height: 1.19;
     letter-spacing: 0.03em;
     text-decoration: none;
+    margin-bottom: 25px;
+    margin-top: 24px;
+    margin-right: 93px;
 }
+
 .logo-park{
     color: var(--primary-tex-color);
 }
@@ -39,6 +68,7 @@ ul{
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
+    text-decoration: none;
 }
 .site-nav .link:hover, 
 .site-nav .link:focus{
@@ -68,34 +98,53 @@ ul{
     line-height: 1.36;
     text-align: center;
     letter-spacing: 0.06em;
+    padding-top: 200px;
+    padding-bottom: 200px;
 }
 .bisness-title{
     color: var(--item-color);
+    margin-top: 0;
     font-weight: 900;
     font-size: 44px;
+    margin-bottom: 30px;
 }
 .button{
     color: var(--item-color);
     background-color: var(--link-color);
+    border-radius: 4px;
+    padding: 10px 32px;
+    display: inline-block;
+    align-items: center;
+    font-family: inherit;
     font-weight: 700;
     font-size: 16px;
     line-height: 1.87;
     letter-spacing: 0.06em;
     cursor: pointer;
+    margin-top: 0px;
+    margin-bottom: 200px;
 }
 
 .button-list:hover,
 .button-list:focus{
-    background-color:var(--button-color);
+background-color:var(--button-color);
 }
 .button-item{
     color: var(--primary-tex-color);
+    font-family: inherit;
+    border-radius: 4px;
+    padding: 6px 22px;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.62;
     text-align: center;
     letter-spacing: 0.03em;
     cursor: pointer;
+    text-align: center;
+    border: 1px solid transparent;
+    margin-top: 0px;
+    margin-bottom: 34px;
+    
 }
 .button-item:hover,
 .button-item:focus{
@@ -104,6 +153,10 @@ ul{
 }
 /*------------------------------stage------------*/
 
+.section-title{
+    padding-top: 94px;
+    padding-bottom: 10px;
+}
 .section-item .title{
     color: var(--primary-tex-color);
     font-weight: 700;
@@ -111,12 +164,16 @@ ul{
     line-height: 1.14;
     letter-spacing: 0.03em;
     text-transform:uppercase ;
+    margin-top: 0px;
+    margin-bottom: 10px;
 }
 .section-item .text{
     color: var(--title-text-color);
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
+    margin-top: 0px;
+    margin-bottom: 94px;
 }
 /*------------------------------WORK------------*/
 
@@ -127,25 +184,49 @@ ul{
     line-height: 1.16;
     text-align: center;
     letter-spacing: 0.03em;
+    margin-top: 0px;
+    margin-bottom: 50px;
 }
+.icons{
+    margin-top: 0px;
+    margin-bottom: 94px;
+}
+.section-work-time{
+    color: var(--primary-tex-color);
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+    text-align: center;
+    letter-spacing: 0.03em;
+    padding-top: 94px;
+    padding-bottom: 50px;
+}
+
 .hero{
     color: var(--primary-tex-color);
     font-weight: 500;
     font-size: 16px;
     line-height: 1.18;
     letter-spacing: 0.03em;
+    margin-top: 0px;
+    margin-bottom: 10px;
 }
 .specialty{
     color: var(--title-text-color);
     font-size: 16px;
     line-height: 1.18;
     letter-spacing: 0.03em;
+    margin-top: 0px;
+    margin-bottom: 30px;
 }
 /*------------------------------FOOTTER------------*/
 
 .footer{
     background-color: var(--accent-color);
+    padding-bottom: 60px;
+    padding-top: 60px;
 }
+
 .logo-page{
     color: var(--item-color);
 }
@@ -159,6 +240,8 @@ ul{
 }
 .footer-page .footer-link{
     color: var(--item-color);
+    margin-top: 0px;
+    margin-bottom: 9px;
 }
 
 .footer-page .link:hover,
@@ -169,12 +252,18 @@ ul{
 /*------------------------------PORTFOLIO------------*/
 
 
+.position{
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
 .portfolio .name{
     color: var(--primary-tex-color);
     font-weight: 700;
     font-size: 18px;
     line-height: 2;
-    letter-spacing: 0.06em;--------
+    letter-spacing: 0.06em;
+    margin-top: 0px;
+    margin-bottom: 4px;
 }
 
 .position .descriptions{
@@ -182,4 +271,6 @@ ul{
     font-size: 16px;
     line-height: 1.87;
     letter-spacing: 0.03em;
+    margin-top: 0px;
+    margin-bottom: 20px;
 }
