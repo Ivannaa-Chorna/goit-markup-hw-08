@@ -35,26 +35,37 @@ p{
     padding: 0;
     margin: 0;
 }
+.img{
+    display: block;
+    width: 100%;
+    height:auto ;
+}
 .container{
     margin: 0 auto;
     padding-left: 15px;
     padding-right: 15px;
     width: 1200px;
-    outline: 2px solid blue
+    /*outline: 2px solid blue*/
 }
 /*------------------------------LOGO------------*/
-
+.main-nav{
+    display: flex;
+    align-items: center;
+    white-space: nowrap;
+}
+.header{
+    display: flex;
+}
 .logo{
+    display: block;
     color:var(--link-color);
     font-family: 'Raleway';
     font-weight: 700;
     font-size: 26px;
     line-height: 1.19;
-    letter-spacing: 0.03em;
     text-decoration: none;
     margin-bottom: 25px;
     margin-top: 24px;
-    margin-right: 93px;
 }
 
 .logo-park{
@@ -62,7 +73,22 @@ p{
 }
 /*------------------------------PAGES------------*/
 
+.site-nav{
+    display: flex;
+    margin-left: 93px;
+   
+}
+
+.site-nav .item:not(:last-child){
+margin-right: 50px;
+}
+
 .site-nav .link{
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
+
+
     color: var(--primary-tex-color);
     font-weight: 500;
     font-size: 14px;
@@ -79,13 +105,26 @@ p{
 }   
 
 /*------------------------------CONTACT------------*/
+.contact-type{
+    display: flex;
+    margin-left: auto;
+}
 
+.contact-type .item +.item{
+    margin-left: 30px;
+}
 .contact-type .link{
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
+
+
     color: var(--title-text-color);
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
+    
 }
 
 .contact-type .link:hover,
@@ -114,6 +153,7 @@ p{
     border-radius: 4px;
     padding: 10px 32px;
     display: inline-block;
+    text-align: center;
     align-items: center;
     font-family: inherit;
     font-weight: 700;
@@ -122,12 +162,23 @@ p{
     letter-spacing: 0.06em;
     cursor: pointer;
     margin-top: 0px;
-    margin-bottom: 200px;
+    margin-bottom: 0px;
 }
 
 .button-list:hover,
 .button-list:focus{
 background-color:var(--button-color);
+}
+.portfolio-section{
+    display: flex;
+    justify-content: center;
+    flex-wrap:wrap ;
+}
+.button-item{
+margin-right: 8px;
+}
+.portfolio-section .button-item.item:not(:last-child){
+    margin-right: 8px;
 }
 .button-item{
     color: var(--primary-tex-color);
@@ -140,7 +191,6 @@ background-color:var(--button-color);
     text-align: center;
     letter-spacing: 0.03em;
     cursor: pointer;
-    text-align: center;
     border: 1px solid transparent;
     margin-top: 0px;
     margin-bottom: 34px;
@@ -151,11 +201,17 @@ background-color:var(--button-color);
     color: var(--item-color);
     background-color: var(--link-color);
 }
-/*------------------------------stage------------*/
-
-.section-title{
+/*------------------------------stage Main------------*/
+.section-list{
+    display: flex; 
+    justify-content: center;
+}
+.section-item:not(:last-child){
+margin-right: 30px;
+}
+.main{
     padding-top: 94px;
-    padding-bottom: 10px;
+    padding-bottom: 94px;  
 }
 .section-item .title{
     color: var(--primary-tex-color);
@@ -173,10 +229,19 @@ background-color:var(--button-color);
     line-height: 1.71;
     letter-spacing: 0.03em;
     margin-top: 0px;
-    margin-bottom: 94px;
+    margin-bottom: 0px;
 }
 /*------------------------------WORK------------*/
-
+.works-icons{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-right: -30px;
+}
+.icons{
+    width: calc(100% /3 -30px);
+    margin-right: 30px;
+}
 .section-work{
     color: var(--primary-tex-color);
     font-weight: 700;
@@ -187,9 +252,26 @@ background-color:var(--button-color);
     margin-top: 0px;
     margin-bottom: 50px;
 }
-.icons{
-    margin-top: 0px;
-    margin-bottom: 94px;
+.take{
+    margin-top: 94px;
+    margin-bottom: 0px;
+}
+.images{
+    display: flex;
+    flex-wrap: wrap;
+}
+.hero-speciality{
+    display: block;
+    width: 270;
+    margin-right: 30px;
+    margin-bottom: 30px;
+    box-sizing: border-box;
+}
+.hero-speciality:nth-child(4n){
+    margin-right: 0;
+}
+.hero-speciality:nth-last-child(-n+4){
+    margin-bottom: 0;
 }
 .section-work-time{
     color: var(--primary-tex-color);
@@ -251,7 +333,23 @@ background-color:var(--button-color);
     
 /*------------------------------PORTFOLIO------------*/
 
-
+.features-title{
+    display: flex;
+    flex-wrap: wrap;
+}
+.feature-element{
+    display: block;
+    width: 370;
+    margin-right: 30px;
+    margin-bottom: 30px;
+    box-sizing: border-box;
+}
+.feature-element:nth-child(3n){
+    margin-right: 0;
+}
+.feature-element:nth-last-child(-n+3){
+    margin-bottom: 0;
+}
 .position{
     padding-top: 94px;
     padding-bottom: 94px;
