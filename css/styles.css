@@ -140,6 +140,24 @@ margin-right: 50px;
     padding-top: 200px;
     padding-bottom: 200px;
 }
+
+.overlay{
+    max-width: 1600px;
+    height: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    outline: 1px solid blue;
+    background-image: linear-gradient( 
+        to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+        ),
+    url(../images/photobisness1.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
 .bisness-title{
     color: var(--item-color);
     margin-top: 0;
@@ -220,6 +238,29 @@ margin-right: 8px;
     clip-path: inset(100%);
     clip: rect();
     overflow: hidden;
+}
+.section-item::before{
+    display: block;
+    content: '';
+    height: 120px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: var(--work-person);
+    margin-top: 0px;
+    margin-bottom: 30px;
+}
+.icon-delivery::before{
+background-image: url(../images/img.svd/внимание.svg);
+}
+.icon-organization::before{
+    background-image: url(../images/img.svd/пунктуальность.svg);
+}
+.icon-test::before{
+    background-image: url(../images/img.svd/планирование.svg);
+}
+.icon-technology::before{
+    background-image: url(../images/img.svd/технологии.svg);
 }
 .section-item .title{
     color: var(--primary-tex-color);
@@ -340,6 +381,7 @@ margin-right: 8px;
     
 /*------------------------------PORTFOLIO------------*/
 
+
 .features-title{
     display: flex;
     flex-wrap: wrap;
@@ -374,4 +416,3 @@ margin-right: 8px;
     line-height: 1.87;
     letter-spacing: 0.03em;
     margin-top: 0px;
-}
