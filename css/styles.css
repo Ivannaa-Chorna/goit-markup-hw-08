@@ -378,16 +378,18 @@ background-image: url(../images/img.svd/внимание.svg);
 .footer-page .link:focus{
     color: var(--item-color);
 }
-    
+
 /*------------------------------PORTFOLIO------------*/
 
-
 .features-title{
+    gap: 30px;
     display: flex;
     flex-wrap: wrap;
 }
 .flex-element{
     padding: 20px 24px;
+    border: 1px solid #eeeeee;
+    border-top:none ;
 }
 .feature-element{
     display: block;
@@ -416,3 +418,9 @@ background-image: url(../images/img.svd/внимание.svg);
     line-height: 1.87;
     letter-spacing: 0.03em;
     margin-top: 0px;
+
+
+
+
+
+
