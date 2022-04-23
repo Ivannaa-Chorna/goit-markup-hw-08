@@ -153,7 +153,11 @@ margin-right: 50px;
     margin-left: auto;
     margin-right: auto;
     outline: 1px solid blue;
-    background-image: url(../images/photobisness1.jpg);
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+    ), 
+    url(../images/photobisness1.jpg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -344,7 +348,29 @@ background-image: url(../images/img.svd/внимание.svg);
     line-height: 1.18;
     letter-spacing: 0.03em;
     margin-top: 0px;
+    margin-bottom: 16px;
 }
+.masters-soc-list{
+    display: flex;
+    justify-content: center;
+
+}
+.masters-soc-item + .masters-soc-item{
+    margin-left: 10px;
+}
+.masters-soc-link{
+    width: 44px;
+    height: 44px;
+    background-color: #188CE8;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.masters-soc-icon{
+    fill: #2F303A;
+}
+
 /*------------------------------FOOTTER------------*/
 
 .footer{
