@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>goit-markup-hw-03</title>
+    <title>goit-markup-hw-04</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -27,9 +27,21 @@
                     <li class="item"><a href="" class="link">Контакты</a></li>
                 </ul>
             </nav>
-            <ul class=" contact-type list">
-                <li class="item"><a href="mailto:info@devstudio.com" class="link">info@devstudio.com</a></li>
-                <li class="item"><a href="tel:+380961111111" class="link">+380961111111</a></li>
+            <ul class="site-nav list">
+                <li class="communication">
+                    <a href="mailto:info@devstudio.com" class="link">
+                        <svg class="contact-icon" width="16" height="12">
+                            <use href="./images/icons.svd/symbol-defs.svg#icon-gmail"></use>
+                        </svg> info@devstudio.com
+                    </a>
+                </li>
+                <li class="communication">
+                    <a href="tel:+380961111111" class="link">
+                        <svg class="contact-icon" width="10" height="16">
+                            <use href="./images/icons.svd/symbol-defs.svg#icon-smartphone"></use>
+                        </svg> +380961111111
+                    </a>
+                </li>
             </ul>
         </div>
     </header>
@@ -133,14 +145,51 @@
     </main>
     <footer class="footer">
         <div class="container">
-            <a href="" class="logo poster link">Web<Span class="logo-page link">Studio</Span></a>
-            <address class="footer-page list">
-                <ul>
-                    <li class="adressa"><a href="" class="footer-link link">г. Киев, пр-т Леси Украинки,26</a></li>
-                    <li class="adressa"><a href="mailto:info@example.com" class="link">info@example.com</a></li>
-                    <li class="adressa"><a href="tel:+380961111111" class="link ">+380961111111</a></li>
-                </ul>
-            </address>
+            <div class="information-contact">
+                <div class="address-item">
+                    <a href="" class="logo poster link">Web<Span class="logo-page link">Studio</Span></a>
+                    <address class="footer-page list">
+                        <ul>
+                            <li class="adressa"><a href="" class="footer-link link">г. Киев, пр-т Леси Украинки,26</a></li>
+                            <li class="adressa"><a href="mailto:info@example.com" class="link">info@example.com</a></li>
+                            <li class="adressa"><a href="tel:+380961111111" class="link ">+380961111111</a></li>
+                        </ul>
+                    </address>
+                </div>
+                <div class=" contact-soc-contact">
+                    <p class="contact-soc-list">ПРИСОЕДИНЯЙТЕСЬ</p>
+                    <ul class="contact-soc">
+                        <li class="contact-soc-item">
+                            <a href="" class="contact-soc-link">
+                                <svg class="contact-soc-icon" width="20" height="20">
+                                    <use href="./images/icons.svd/symbol-defs.svg#icon-instagram-2"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="contact-soc-item">
+                            <a href="" class="contact-soc-link">
+                                <svg class="contact-soc-icon" width="20" height="20">
+                                    <use href="./images/icons.svd/symbol-defs.svg#icon-twitter-1"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="contact-soc-item">
+                            <a href="" class="contact-soc-link">
+                                <svg class="contact-soc-icon" width="20" height="20">
+                                    <use href="./images/icons.svd/symbol-defs.svg#icon-facebook-1"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="contact-soc-item">
+                            <a href="" class="contact-soc-link">
+                                <svg class="contact-soc-icon" width="20" height="20">
+                                    <use href="./images/icons.svd/symbol-defs.svg#icon-linkedin-1"></use>
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </div>
     </footer>
 </body>
