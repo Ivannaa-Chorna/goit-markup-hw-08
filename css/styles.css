@@ -114,7 +114,7 @@ img{
 .site-nav .link:focus{
     color: var(--link-color);
 }
-.site-nav .link .current{
+.site-nav .current{
     color: var(--link-color);
 }   
 
@@ -190,6 +190,7 @@ img{
     cursor: pointer;
     margin-top: 0px;
     margin-bottom: 0px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
 .button-list:hover,
@@ -311,8 +312,13 @@ color: var(--primary-tex-color);
     display: flex;
     flex-wrap: wrap;
 }
-.icons-person:not(:last-child){
+.icons-person:last-child {
+    margin: 0px;
+}
+.icons-person{
     margin-right: 30px;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px
 }
 .hero-speciality{
     padding-top: 30px;
@@ -511,6 +517,7 @@ fill: currentColor;
     border-top:none ;
 }
 .feature-element{
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
     display: block;
     width: 370;
     box-sizing: border-box;
