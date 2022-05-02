@@ -590,35 +590,41 @@ box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1p
     letter-spacing: 0.03em;
     margin-top: 0px;
 }
-.feature-element:hover .overlay-box,
-.feature-element:focus .overlay-box{
+.feature-element:hover .text-overlay ,
+.feature-element:focus .text-overlay{
     transform: translateY(0%);
     opacity: 1;
-
 }
 .feature-box{
     position: relative;
     overflow: hidden;
 }
+.text-overlay{
+    position: absolute;
+  display: flex;
+  align-items: center;
+  top: 0; 
+  height: 100%;
+  padding: 63px 24px;
+  font-size: 18px;
+  line-height: 1.15;
+  background-color: rgba(33, 150, 243, 0.9);
+  transform: translateY(100%);
+  opacity: 0;
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1)
+ 
+}
 .overlay-box{
-position: absolute;
 display: flex;
-font-style: normal;
-font-size: 18px;
-line-height: 1.5;
-letter-spacing: 0.03em;
-padding:63px 24px;
-top: 0;
-margin: 0;
-height: 100%;
-align-items: center;
+  font-style: normal;
+  font-weight: normal;
+  letter-spacing: 0.03em;
+  font-size: 18px;
+  line-height: 1.5;
 color: var(--item-color);
-background-color: rgba(33, 150, 243, 0.9);
-transform: translateY(100%);
-transition-property: transform, opacity;
-transition-duration: 250ms;
-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-opacity: 0;
+margin: 0;
+
+opacity: 1;
 }
 
 /*------------------------------Modelne okno------------*/
