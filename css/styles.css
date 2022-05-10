@@ -864,7 +864,6 @@ justify-content: center;
 }
 .submit-button{
     display: flex;
-    
     color: var(--item-color);
     background-color: #2196F3;
     font-family: inherit;
@@ -887,7 +886,9 @@ justify-content: center;
     border: 0;
 }
 
-.submit-button:hover,
-.submit-button:focus{
+.submit-button:hover{
 background-color: #188CE8;
+}
+.submit-button:focus{
+    background-color: #188CE8;
 }
