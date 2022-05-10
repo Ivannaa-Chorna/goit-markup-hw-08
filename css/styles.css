@@ -823,7 +823,7 @@ position:relative;
 }
 
 .comment:focus {
-    border: 1px solid #2196F3;
+    border: 1px solid var(--link-color);
 }
 .check-text{
     font-size: 14px;
