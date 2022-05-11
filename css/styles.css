@@ -725,7 +725,7 @@ display: flex;
     opacity: 1;
 }
 .backdrop.is-hidden.modal{
-    transform: translate(-50%, -50%) scale(0.2);
+    transform: translate(-50%, -50%) scale(0.5);
 }
 .modal{
     position: absolute;
