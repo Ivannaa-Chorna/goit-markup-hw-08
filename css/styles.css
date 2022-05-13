@@ -741,8 +741,6 @@ display: flex;
 
 }
 .modal-close-bt{
-    display: flex;
-    flex-direction: column;
     position: absolute;
     padding: 0;
     top: 8px;
@@ -801,7 +799,7 @@ border: 1px solid var(--link-color);
 display: flex;
 flex-direction: column;
 position:relative;
-margin-bottom: 10px;    
+margin-bottom: 10px;   
 }
 .form-icons{
     position:absolute;
