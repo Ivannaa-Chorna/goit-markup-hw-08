@@ -6,11 +6,11 @@
     display: flex;
     align-items: center;
 }
-.container__header{
+   
+  .container__header{
     display: flex;
     align-items: center;
-}
-    
+  }
 .logo{
     display: block;
     color:var(--link-color);
@@ -28,7 +28,7 @@
 /*------------------------------PAGES------------*/
 
 .site-nav{
-    display: flex;
+    display: none;
     margin-left: 93px;
 }
 
@@ -74,7 +74,7 @@ background-color: var(--link-color);
 /*------------------------------contact-top------------*/
 
 .contact-top{
-    display: flex;
+    display: none;
     margin-left: auto;
 }
 
@@ -109,3 +109,21 @@ background-color: var(--link-color);
   align-items: center;
 }
 
+.button.menu-open-btn{
+  top: 22px;
+  right: 22px
+  display: block;
+  background-color: transparent;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  box-sizing: border-box;
+  cursor: pointer;
+  &:hover,
+  &:focus{
+fill: var(--link-color);
+}
+  @media screen and (min-width: 768px){
+display: none;
+}
+}
