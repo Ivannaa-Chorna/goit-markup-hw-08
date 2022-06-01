@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>goit-markup-hw-07</title>
+    <title>goit-markup-hw-08</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -43,6 +43,72 @@
                     </a>
                 </li>
             </ul>
+            <button type="button" class="menu-button" data-menu-open>
+                <svg class="menu" width="24" height="16">
+                    <use href="./images/sprite.svg#icon-menu_40"></use>
+                </svg>
+            </button>
+        </div>
+        <div class="backdrop-mobile is-hidden" data-menu>
+            <div class="mobile-menu menu-open">
+                <button type="button" class="menu-button-close" data-menu-close>
+                    <svg class="menu" width="18" height="18">
+                        <use href="./images/sprite.svg#icon-menu_40"></use>
+                    </svg>
+                </button>
+                <ul class="mob-site-nav">
+                    <li class="mob-site-nav__item"><a href="" class="mob-site-nav__link mob-site-nav__link--current">Студия</a></li>
+                    <li class="mob-site-nav__item"><a href="./portfolio.html" class="mob-site-nav__link ">Портфолио</a></li>
+                    <li class="mob-site-nav__item"><a href="" class="mob-site-nav__link">Контакты</a></li>
+                </ul>
+                </nav>
+                <ul class="mob-contact-top">
+                    <li class="mob-contact-top__item">
+                        <a href="mailto:info@devstudio.com" class="mob-contact-top__link link">
+                            <svg class="mob-contact-top__icon" width="16" height="12">
+                                <use href="./images/icons.svd/symbol-defs.svg#icon-gmail"></use>
+                            </svg> info@devstudio.com
+                        </a>
+                    </li>
+                    <li class="mob-contact-top__item">
+                        <a href="tel:+380961111111" class="mob-contact-top__link link">
+                            <svg class="mob-contact-top__icon" width="10" height="16">
+                                <use href="./images/icons.svd/symbol-defs.svg#icon-smartphone"></use>
+                            </svg> +380961111111
+                        </a>
+                    </li>
+                </ul>
+                <ul class="mob-masters-soc">
+                    <li class="mob-masters-soc-item">
+                        <a href="" class="mob-masters-soc-link">
+                            <svg class="mob-masters-soc-icon" width="20" height="20">
+                                <use href="./images/icons.svd/symbol-defs.svg#icon-instagram-2"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="mob-masters-soc-item">
+                        <a href="" class="mob-masters-soc-link">
+                            <svg class="mob-masters-soc-icon" width="20" height="20">
+                                <use href="./images/icons.svd/symbol-defs.svg#icon-twitter-1"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="mob-masters-soc-item">
+                        <a href="" class="mob-masters-soc-link">
+                            <svg class="mob-masters-soc-icon" width="20" height="20">
+                                <use href="./images/icons.svd/symbol-defs.svg#icon-facebook-1"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="mob-masters-soc-item">
+                        <a href="" class="mob-masters-soc-link">
+                            <svg class="mob-masters-soc-icon" width="20" height="20">
+                                <use href="./images/icons.svd/symbol-defs.svg#icon-linkedin-1"></use>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+            </div>
         </div>
     </header>
     <main>
@@ -107,19 +173,22 @@
                 <ul class="works">
                     <li class="works__item">
                         <div class="works__thumb">
-                            <img src="./images/photo1.jpg" alt="написание кодов" width="370">
+                            <img 
+                            src="./images/photo1.jpg" alt="написание кодов" width="370">
                             <p class="works__label">Десктопные приложения</p>
                         </div>
                     </li>
                     <li class="works__item">
                         <div class="works__thumb">
-                            <img src="./images/photo2.jpg" alt="создание приложения" width="370">
+                            <img 
+                            src="./images/photo2.jpg" alt="создание приложения" width="370">
                             <p class="works__label">Мобильные приложения</p>
                         </div>
                     </li>
                     <li class="works__item">
                         <div class="works__thumb">
-                            <img src="./images/photo3.jpg" alt="выбор цветов" width="370">
+                            <img 
+                            src="./images/photo3.jpg" alt="выбор цветов" width="370">
                             <p class="works__label">Дизайнерские решения</p>
                         </div>
                     </li>
@@ -133,7 +202,22 @@
                 <h2 class="section__title">Наша команда</h2>
                 <ul class="images">
                     <li class="images__item">
-                        <img src="./images/photo4.jpg" alt="фото дизайнера" width="270">
+                        <picture>
+                            <source 
+                            srcset="./images/photoo/desc1-1x.jpg 1x,
+                            ./images/photoo/desc1-2x.jpg 2x"
+                            media="(min-width: 1200px)"
+                            />
+
+                            <source srcset="./images/photoo/mob1-1x.jpg 1x,
+                            ./images/photoo/mob1-2x.jpg 2x" 
+                            media="(min-width: 768px)" />
+
+                            <source srcset="./images/photoo/tab1-1x.jpg 1x,
+                            ./images/photoo/tab1-2x.jpg 2x" 
+                            media="(min-width: 480px)" />
+                           <img src="./images/photo4.jpg" alt="фото дизайнера">
+                        </picture>                                                  
                         <div class="images__box">
                             <h3 class="images__title">Игорь Демьяненко</h3>
                             <p class="images__text">Product Designer</p>
@@ -170,7 +254,18 @@
                         </div>
                     </li>
                     <li class="images__item">
-                        <img src="./images/photo5.jpg" alt="фото розробника" width="270">
+                        <picture>
+                            <source srcset="./images/photoo/dest2-1x.jpg 1x,
+                            ./images/photoo/dest2-2x.jpg 2x" media="(min-width: 1200px)" />
+                        
+                            <source srcset="./images/photoo/mob2-1x.jpg 1x,
+                             ./images/photoo/mob2-2x.jpg 2x" media="(min-width: 768px)" />
+                        
+                            <source srcset="./images/photoo/tab2-1x.jpg 1x,
+                            ./images/photoo/tab2-2x.jpg 2x" media="(min-width: 480px)" />
+                            <img src="./images/photo5.jpg" alt="фото дизайнера">
+                        </picture>
+                        
                         <div class="images__box">
                             <h3 class="images__title">Ольга Репина</h3>
                             <p class="images__text">Frontend Developer</p>
@@ -207,7 +302,18 @@
                         </div>
                     </li>
                     <li class="images__item">
-                        <img src="./images/photo6.jpg" alt="фото маркетолога" width="270">
+                        <picture>
+                            <source srcset="./images/photoo/desc3-1x.jpg 1x,
+                            ./images/photoo/desc3-2x.jpg 2x" media="(min-width: 1200px)" />
+                        
+                            <source srcset="./images/photoo/mob3-1x.jpg 1x,
+                            ./images/photoo/mob3-2x.jpg 2x" media="(min-width: 768px)" />
+                        
+                            <source srcset="./images/photoo/tab3-1x.jpg 1x,
+                            ./images/photoo/tab3-2x.jpg 2x" media="(min-width: 480px)" />
+                            <img src="./images/photo6.jpg" alt="фото дизайнера">
+                        </picture>
+                        
                         <div class="images__box">
                             <h3 class="images__title">Николай Тарасов</h3>
                             <p class="images__text">Marketing</p>
@@ -244,7 +350,18 @@
                         </div>
                     </li>
                     <li class="images__item">
-                        <img src="./images/photo7.jpg" alt="фото дизайнера" width="270">
+                        <picture>
+                            <source srcset="./images/photoo/desc4-1x.jpg 1x,
+                            ./images/photoo/desc4-2x.jpg 2x" media="(min-width: 1200px)" />
+                        
+                            <source srcset="./images/photoo/mob4-1x.jpg 1x,
+                            ./images/photoo/mob4-2x.jpg 2x" media="(min-width: 768px)" />
+                        
+                            <source srcset="./images/photoo/tab4-1x.jpg 1x,
+                            ./images/photoo/tab4-2x.jpg 2x" media="(min-width: 480px)" />
+                            <img src="./images/photo7.jpg" alt="фото дизайнера">
+                        </picture>
+                        
                         <div class="images__box">
                             <h3 class="images__title">Михаил Ермаков</h3>
                             <p class="images__text">UI Designer</p>
@@ -460,6 +577,7 @@
         </div>
     </div>
     <script src="./js/modal.js"></script>
+
 </body>
 
 </html>
