@@ -1,0 +1,94 @@
+<header class="header">
+  <div class="header__container">
+    <a href="./index.html" class="logo">
+      <img
+        srcset="./images/header/custom-logo@1x.png 1x, ./images/header/custom-logo@2x.png 2x"
+        src="./images/header/custom-logo@1x.png"
+        alt="company logo"
+        class="logo__image"
+      />
+      <span class="logo__text">icecream</span>
+    </a>
+    <nav class="site-nav">
+      <ul class="site-nav__list">
+        <li class="site-nav__item">
+          <a data-goto=".hero" href="#" class="site-nav__link">Home</a>
+        </li>
+        <li class="site-nav__item">
+          <a data-goto=".customer-reviews" href="#" class="site-nav__link">About us</a>
+        </li>
+        <li class="site-nav__item">
+          <a data-goto=".about" href="#" class="site-nav__link">How it’s made?</a>
+        </li>
+        <li class="site-nav__item">
+          <a data-goto=".products" href="#" class="site-nav__link">Our products</a>
+        </li>
+        <li class="site-nav__item">
+          <a data-goto=".contacts" href="#" class="site-nav__link">Contact</a>
+        </li>
+      </ul>
+      <button class="site-nav__button-open">
+        <svg class="site-nav__icon" width="20px" height="20px">
+          <use href="./images/header/alt-sprite.svg#icon-burger"></use>
+        </svg>
+      </button>
+    </nav>
+
+    <button type="button" class="button header__button button--open-modal" >Buy now</button>
+
+      <a href="#" id="toTop" class="totop">
+        <img src="./images/header/custom-top-button@1x.png" alt="to top"><span class="button__top"></span></img>
+      </a>
+  </div>
+
+
+</header>
+
+<div class="mobile-menu">
+  <div class="mobile-menu__thumb">
+    <button class="mobile-menu__button-close">
+      <svg class="mobile-menu__icon" width="14" height="14">
+        <use href="./images/header/alt-sprite.svg#icon-close"></use>
+      </svg>
+    </button>
+    <button class="button button--mobile-menu" data-shop-mob-open>Buy now</button>
+    <nav class="mobile-menu__nav">
+      <ul class="mobile-menu__list">
+        <li class="mobile-menu__item">
+          <a data-goto=".hero" href="#" class="mobile-menu__link">Home</a>
+        </li>
+        <li class="mobile-menu__item">
+          <a data-goto=".reviews" href="#" class="mobile-menu__link">About us</a>
+        </li>
+        <li class="mobile-menu__item">
+          <a data-goto=".about" href="#" class="mobile-menu__link">How it’s made?</a>
+        </li>
+        <li class="mobile-menu__item">
+          <a data-goto=".products" href="#" class="mobile-menu__link">Our products</a>
+        </li>
+        <li class="mobile-menu__item">
+          <a data-goto=".footer" href="#" class="mobile-menu__link">Contact</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</div>
+
+<div class="shop-modal shop-modal--is-hidden" data-shop>
+  <div class="container shop-modal__container">
+    <button class="button button--invert shop-modal__button" data-shop-close data-shop-mob-close>
+      X
+    </button>
+    <ul class="shop-modal__list">
+      <li class="shop-modal__item"></li>
+      <li class="shop-modal__item"></li>
+      <li class="shop-modal__item"></li>
+      <li class="shop-modal__item"></li>
+      <li class="shop-modal__item"></li>
+      <li class="shop-modal__item"></li>
+      <li class="shop-modal__item"></li>
+      <li class="shop-modal__item"></li>
+      <li class="shop-modal__item"></li>
+    </ul>
+  </div>
+</div>

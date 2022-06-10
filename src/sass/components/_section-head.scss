@@ -1,0 +1,147 @@
+.section-head {
+  margin: 0 auto;
+
+  &--master {
+    margin-left: 0px;
+  }
+
+  &--hidded {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+  }
+}
+
+.section-head__title {
+  margin: 0 auto;
+
+  font-family: 'Titan One', cursive;
+  font-size: 34px;
+  line-height: 1.147;
+  text-align: center;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+
+  color: $accentColor;
+
+  @media screen and (min-width: 768px) {
+    font-size: 48px;
+    line-height: 1.146;
+  }
+
+  @media screen and (min-width: 1280px) {
+    font-size: 58px;
+    line-height: 1.138;
+    letter-spacing: 0.06em;
+  }
+}
+
+.section-head__label {
+  display: block;
+  margin: 0 auto 15px;
+
+  font-family: Titan One, cursive;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 1.167;
+  text-align: center;
+  text-transform: uppercase;
+
+  color: $accentTextColor;
+
+  @media screen and (min-width: 768px) {
+    font-size: 26px;
+    line-height: 1.154;
+  }
+
+  @media screen and (min-width: 1280px) {
+    font-size: 30px;
+    line-height: 1.133;
+    letter-spacing: 0.04em;
+  }
+}
+
+.section-head__label--master {
+  margin: 0;
+
+  font-size: 26px;
+  line-height: 1.154;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  text-align: left;
+  color: $lightTextColor;
+
+  @media screen and (min-width: 768px) {
+    font-size: 22px;
+    line-height: 1.136;
+  }
+
+  @media screen and (min-width: 1280px) {
+    font-size: 38px;
+    line-height: 1.158;
+  }
+}
+
+.section-head__title--master {
+  font-size: 48px;
+  line-height: 0.965;
+  text-align: left;
+  margin-bottom: 19px;
+
+  @media screen and (min-width: 768px) {
+    font-size: 34px;
+    line-height: 0.905;
+    letter-spacing: 0.04em;
+    margin-bottom: 20px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    font-size: 58px;
+    margin-bottom: 25px;
+  }
+}
+
+.section-head__list {
+  display: flex;
+}
+
+.section-head__item {
+  &:not(:last-child) {
+    margin-right: 8px;
+  }
+}
+
+.section-head__link {
+  display: block;
+  padding: 7px 14px;
+
+  font-size: 8px;
+  line-height: 1.25;
+  color: $accentColor;
+
+  background-color: $lightTextColor;
+  border-radius: 20px;
+
+  &:hover,
+  &:focus {
+    background-color: $bgBtnHover;
+  }
+
+  &--invert {
+    color: $lightTextColor;
+    background-color: $accentColor;
+
+    &:hover,
+    &:focus {
+      background-color: $bgBtnInvertHover;
+    }
+  }
+}
